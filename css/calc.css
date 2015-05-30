@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+body {
+	padding-top: 25px;
+}
+#calc {
+    margin: 0 auto;
+    width: 20%;
+    max-width: 1200px;
+}
+#top {
+	width: 100%;
+}
+.button {
+	float: left;
+	margin: 1%;
+	width: 22%;
+}
+.clearfix {
+	clear: both;
+}
+.inputleft, .inputright {
+	float: left;
+	width: 39%;
+	margin: 1%;
+}
+.inputmid {
+	float: left;
+	width: 12%;
+	margin: 1%;
+}

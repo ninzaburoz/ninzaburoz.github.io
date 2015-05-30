@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body id="body">
+<script type="text/javascript" src="java/jquery-2.1.4.min.js"></script>
+<script>
+
+
+    $('document').ready(function() {
+        //var listener = function (event) {
+        //console.log(event);
+        //console.log(event.keyCode);
+        //};
+        var keys = [],
+            konami = "38,38,40,40,37,39,37,39,66,65";
+        var body = $('body');
+
+        //-------------------------------------------\\
+
+        var bodyclick = $('body').keyup(function(e){
+            //console.log(bodyclick);
+            keys.push(e.keyCode);
+        // and check to see if the user has entered the Konami code
+            if(keys.toString().indexOf(konami) >= 0) {
+            alert('Konami - 30 lives');
+            };
+        });
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Simple Simon</title>
+	<link rel="stylesheet" href="/css/simplesimon.css">
+</head>
+<body>
+	<h1 id="title">Simple Simon is Simple</h1>
+
+	<div id="container">
+
+		<div id="red" class="box" data-box="1"></div>
+		<div id="blue" class="box" data-box="2"></div>
+
+			<div class="clearfix"></div>
+
+		<div id="green" class="box" data-box="3"></div>
+		<div id="yellow" class="box" data-box="4"></div>
+
+	</div>
+	
+	<!-- <div class="sButton">
+      	<button class="start">start</button>
+    </div> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="java/simon.js"></script>
+<script>
+	$('document').ready(function() {
+
+		$('#red').on('click', function() {
+			$('#red').toggleClass('yellowon');
+			});
+
+// 		function newRound() {
+// 			var sequence = [1,2,1]; //red, green, red
+// 			animate(sequence);
+// 		}
+ 
+// 		function animate(sequence) {
+// 		var i = 0;
+// 		var interval = setInterval(function() {
+// 		lightUp(sequence[i]);
+ 
+//         i++;
+//         if (i >= sequence.length) {
+// 			clearInterval(interval);
+//         }
+//    }, 600);
+// }
+	});
+
+	</script>
+</body>
+</html>

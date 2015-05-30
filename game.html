@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body id="body">
+
+<script type="text/javascript">
+	"use strict"
+
+	var listener = function (event) {
+		console.log(event);
+		console.log(event.keyCode);
+	}
+
+	var body = document.getElementById('body');
+	body.addEventListener('keyup', listener, false);
+
+	//----------------------------------------\\
+
+	if (body.addEventListener) {
+    var keys = [],
+        konami = "38,38,40,40,37,39,37,39,66,65";
+    
+    // bind the keydown event to the Konami code
+    body.addEventListener("keyup", function(e){
+        // figure out how to make the keycodes = the array
+        keys.push(e.keyCode);
+        console.log(keys.toString());
+        
+        // and check to see if the user has entered the Konami code
+        if (keys.toString().indexOf(konami) >= 0) {
+            alert('Konami - 30 lives');
+        };
+    }, false);
+	};
+
+</script>
+
+</body>
+</html>

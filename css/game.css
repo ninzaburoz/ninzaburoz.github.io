@@ -1,0 +1,59 @@
+.wrapper{
+  position: relative;
+  width:540px;
+  margin:0 auto;
+}
+.back{
+  position: absolute;
+  top:180px;
+  width:540px;
+  height: 540px;
+  z-index:0;
+  background-color: #000;
+  border-radius: 310px;
+}
+.pad {
+  width: 250px;
+  height: 250px;
+  float: left;
+  z-index: 1;
+  margin: 10px;
+  opacity: 0.6;
+}
+
+.shape1 {
+  border-top-left-radius: 250px;
+  background-color: green;
+}
+
+.shape2 {
+  float: left;
+  border-top-right-radius: 250px;
+  background-color: red;
+  clear: right;
+}
+.shape3 {
+  float: left;
+  border-bottom-left-radius: 250px;
+  background-color: yellow;
+  clear: left;
+}
+.shape4 {
+  float: left;
+  border-bottom-right-radius: 250px;
+  background-color: blue;
+}
+.level, .score {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.sButton {
+  width: 30%;
+  margin: 0 auto;
+}
+.start {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
